@@ -1,0 +1,349 @@
+/* ALL=============================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    z-index: -2;
+    background-color: #6699cc;
+    overflow-x: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 55px;
+    text-align: center;
+}
+button {
+    z-index: 12;
+  }
+
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.158);
+    height: 130px;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 2%;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    color: aliceblue;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+nav {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 200px;
+    margin-right: 1%;
+    z-index: 10;
+}
+
+.navbarH li {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 5px 20px;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.iconB {
+    transition: 1.5s;
+}
+
+.iconB:hover {
+    background-color: rgba(0, 0, 0, 0.256);
+    border-radius: 20px;
+}
+
+.iconB a:hover::before {
+    right: 5%;
+    top: -50px;
+    position: absolute;
+    content : url("../gallery/logoa2.png");
+    transform: scale(0.45);
+    margin-top: -80px;
+}
+
+.textContainer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: -1;
+    background-image: url("../gallery/background.jpg");
+    background-size: cover;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    bottom: 250px;
+    height: 1200px;
+    
+}
+
+.textAcc {
+    z-index: 1;
+    background-image: url("../gallery/parc.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 55%;
+    margin: 0 auto;
+    height: 1100px;
+    border-radius: 200px;
+
+}
+
+.textAcc p{
+    text-align: justify;
+    font-family: 'Macondo', cursive;
+    font-size: 45px;
+    padding: 10% 15%;
+}
+
+h2 {
+    margin-top: 100px;
+    text-decoration: overline;
+}
+
+.char {
+    background-image: url("../gallery/931668.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+
+}
+
+#chartext {
+    text-align: justify;
+    border: 1px black solid;
+    height: 800px;
+    width: 30%;
+    font-size: 30px;
+    border-radius: 10%;
+    background-color: rgba(141, 129, 129, 0.308);
+    margin-left: 10px;
+}
+
+#chartext p{
+    padding: 5%;
+    text-align: justify;
+    font-family: 'Macondo', cursive;
+    font-size: 20px;
+    
+}
+
+#charimg {
+    width: 35%;
+    background-image: url("../gallery/c5cLn.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
+#hf {
+    display: flex;
+    width: 50%;
+    height: 250px;
+    background-image: url("../gallery/18366.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0.75);
+    margin: auto;
+}
+
+#qst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 70%;
+    margin: auto;
+    background-color: rgba(141, 129, 129, 0.308);
+
+}
+
+#qst p{
+    text-align: justify;
+    font-family: 'Macondo', cursive;
+    font-size: 32px;
+    max-width: 80%;
+    margin: 15px auto;
+ 
+}
+
+#qst p a{
+    text-align: justify;
+    font-family: 'Macondo', cursive;
+    font-size: 32px;
+}
+
+
+.buttonLink{
+    background-color: gray;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.buttonLink:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+    transition: 1s;
+}
+
+/* 
+    SECTION DONJONS RAIDS
+*/
+
+.pve{
+    display: flex;
+    min-width: 100%;
+    margin: 0;
+    min-height: 700px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin: 15px;
+}
+
+.extension{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.raid{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    justify-content: center;
+}
+
+.donjon{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    justify-content:center;
+}
+
+.blocBoss{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin: 5px;
+}
+
+.boss-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.pve h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    font-family: 'Macondo', cursive;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.pve h3{
+    color: rgb(223, 235, 231);
+    font-size: 22px;
+    font-family: 'Macondo', cursive;
+    font-size: 30px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.509);
+}
+
+#shadowlands {
+    background-image: url(https://zagrano.pl/wp-content/uploads/2020/12/world-of-warcraft-shadowlands-blizzard.jpg);
+    background-size: cover;
+}
+
+#dragonflight {
+    background-image: url(https://new-game-plus.fr/wp-content/uploads/2022/12/Wow-DF-affiche.webp);
+    background-size: cover;
+}
+
+  
+  .transformed-state {
+    animation: shaking 0.5s linear;
+
+  }
+  
+  .duration-1{
+    transition-delay: 0.5s;
+  }
+  
+  .duration-2 {
+    transition-delay: 2s;
+  }
+  
+  .duration-3 {
+    transition-delay: 4s;
+  }
+
+  .filteredstate {
+    filter: grayscale(1);
+  }
+
+  @keyframes shaking {
+
+    20% {
+        transform: translateX(50px);    
+    }
+
+    40% {
+        transform: translateY(-70px);
+    }
+    60% {
+        transform: translateY(80px);}
+    80% {
+        }
+    100% {
+        transform: translateX(-50px);}
+  }
+  
+  .blocBoss p{
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+  }
+
